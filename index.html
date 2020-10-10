@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerador de link para whatsapp para preguiçoso. Só clicar e ser feliz! * Nenhum dado é armazenado">
+
+    <title>link para whatsapp</title>
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gerador de link para whatsapp</h1> <img src="./image/whatsapp-logo.png" width="30px">
+        </div>
+        <div class="inputs">
+            <input type="text" name="telefone" class="telefone" id="telefone" placeholder="(DDD) 0 0000-0000" maxlength="15" onkeypress="mascaraTel()" onchange="mascaraTel()" required>
+            <textarea type="text" name="texto" class="texto" id="texto" placeholder="Escreva o texto..." ></textarea>
+            <button class="btn" id="linkButton" onclick="gerarLink()" >Gerar Link</button>
+            <input type="text" name="linkGerado" id="linkGerado"></h2>
+            <button class="btn" id="novoLink" onclick="gerarNovoLink()" >Gerar Novo Link</button>
+            <button onclick="copiarTexto()" class="btn" id="copia"  >Copiar Link</button>
+        </div>
+        <div class="comoFunciona">
+            <h3>Como funciona</h3>
+            <p><b style="color: rgb(0, 191, 164);" >1.</b> Insira o nº do WhatsApp Ex: 21 9 9441-3136</p>
+            <p><b style="color: rgb(0, 191, 164);">2.</b> Escreva a mensagem padrão que será exibida</p>
+            <p><b style="color: rgb(0, 191, 164);">3.</b> Clique em “GERAR LINK”</p>
+            <p><b style="color: rgb(0, 191, 164);">4.</b> Copie o link e compartilhe</p>
+            <p><b style="color: rgb(0, 191, 164);">5.</b> Antes de usar, faça o teste</p>
+        </div>
+        
+        
+
+    </div>
+
+
+
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
