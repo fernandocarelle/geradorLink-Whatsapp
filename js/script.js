@@ -16,6 +16,16 @@ function gerarLink(){
     let number = document.getElementById('telefone').value;
     number=number.replace(/\D/g,"");
     let text = document.getElementById('texto').value;
+    text=text.replace(/( )+/g,'%20');
+    text=text.replace('?', '3F');
+    text=text.replace('%', '%25');
+    text=text.replace("(", '%28');
+    text=text.replace(")", '%29');
+    text=text.replace("*", '%2A');
+    text=text.replace(",", '%2C');
+    text=text.replace(".", '%2E');
+    text=text.replace("@", '%40');
+    text=text.replace(":", '%3A');
     let result;
 
     if(number.length < 10) {
