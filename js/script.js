@@ -17,8 +17,8 @@ function gerarLink(){
     number=number.replace(/\D/g,"");
     let text = document.getElementById('texto').value;
     text=text.replace(/( )+/g,'%20');
-    text=text.replace('?', '3F');
-    text=text.replace('%', '%25');
+    text=text.replace(/[?]/g, '%3F');
+    text=text.replace(/[!]/g, '%21');
     text=text.replace("(", '%28');
     text=text.replace(")", '%29');
     text=text.replace("*", '%2A');
